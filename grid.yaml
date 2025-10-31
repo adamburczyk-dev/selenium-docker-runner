@@ -1,4 +1,3 @@
-version: "3"
 services:
   hub:
     image: selenium/hub:4.32
@@ -16,5 +15,6 @@ services:
     depends_on:
     - hub
     deploy:
-      replicas: 0
+      replicas: 1
     env_file: .env
+
