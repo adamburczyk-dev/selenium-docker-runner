@@ -18,12 +18,6 @@ pipeline {
                 bat "docker-compose -f test-suites.yaml up"
             }
         }
-        
-        stage('Bring Grid Down') {
-            steps {
-                bat "docker-compose down"
-            }
-        }
     }
 
     post {
